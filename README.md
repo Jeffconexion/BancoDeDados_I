@@ -6,7 +6,7 @@ Armazenar atividades feita, material, exercícios práticado em sala ou até mes
 
 Material ficará disponível para quem desejar baixar e aplicar em seus estudos pessoais.
 
-Sobre o Autor
+# Sobre o Autor
 @Autor: Jefferson Santos
 
 Graduado em Sistemas de Informação pela Universidade Federal de Sergipe.
