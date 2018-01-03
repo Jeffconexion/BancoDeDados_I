@@ -1,0 +1,31 @@
+##### Atividade Realizada no dia 03/01/2018 ####
+Atualizando os valores totais que estão faltando na tabela
+
+1)Item_pedido irei colocar os valores na coluna de TotalProduto
+
+update 
+        item_pedido i
+set 
+        i.totalproduto = 
+
+(
+   select 
+	      (i.quantidadeProduto * p.precoProduto) 
+   from 
+			produto p  
+   where 
+         i.Produto_CodigoProduto = p.codigoProduto
+);
+
+________________ * ______________________ * ____________________________
+
+2) Preenchendo na tabela pedido a coluna total pedido
+update
+	pedido p
+set
+	p.TotalPedido =
+(
+select i.totalproduto from item_pedido i
+where
+p.NumeroPedido = i.pedido_numeroPedido
+);
